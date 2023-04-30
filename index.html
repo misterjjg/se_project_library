@@ -20,19 +20,18 @@
           />
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a class="nav__link" href="#nav__events">Events</a>
+            </li>
+            <a class="nav__link" href="#nav__staff-picks">Staff picks</a>
+          </li>
+            <li>
+              <a class="nav__link" href="#nav__member">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">Events</a>
+              <a class="nav__link" href="#nav__about">About</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
-            </li>
-            <li>
-              <a class="nav__link">About</a>
-            </li>
-            <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" href="#nav__contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -48,7 +47,9 @@
           class="header__image"
         />
         <div class="header__footer">
-          <a class="header__link">About the library &darr;</a>
+          <a class="header__link" href="#nav__about"
+            >About the library &darr;</a
+          >
           <p class="header__address">
             200 Success Avenue, The Town of Practicum
           </p>
@@ -56,7 +57,7 @@
       </header>
 
       <main class="content">
-        <section class="events">
+        <section class="events" id="nav__events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -137,7 +138,7 @@
         </section>
 
         <section class="staff">
-          <h2 class="staff__title">Staff picks</h2>
+          <h2 class="staff__title" id="nav__staff-picks">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <ul class="staff__cards">
             <li class="card">
@@ -210,7 +211,7 @@
           </ul>
         </section>
 
-        <section class="membership">
+        <section class="membership" id="nav__member">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -266,7 +267,7 @@
           </ul>
         </section>
 
-        <section class="about">
+        <section class="about" id="nav__about">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -290,10 +291,35 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer">
-        <!-- ----------------------------------------------------------------- -->
-        <!--          Don't uncomment until the final project stage            -->
-        <!-- ----------------------------------------------------------------- -->
+      <footer class="footer" id="nav__contacts">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img src="./images/logo_white.png" alt="Practicum logo" class="footer__logo">
+          </div>
+          <div class="footer__column footer__column_content_hours">
+            <h2 class="footer__heading">Hours</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+              <li class="footer__list-item">Weekends: 10am - 6pm</li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <h2 class="footer__heading">Social Media</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img class="footer__social-icon" src="./images/facebook_white.svg" alt="Facebook Logo">
+                Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img class="footer__social-icon" src="./images/instagram_white.svg" alt="Instagram Logo">
+                Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">&copy; 2023 Joshua Gonzalez</p>
       </footer>
     </div>
   </body>
